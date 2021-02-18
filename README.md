@@ -1,6 +1,6 @@
-# flutter_cube_app
+# new_encounters
 
-Application mobile projet CUBE
+A new Flutter project.
 
 ## Getting Started
 
