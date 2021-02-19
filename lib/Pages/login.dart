@@ -19,6 +19,35 @@ class _LoginState extends State<Login> {
         title: Text(widget.title),
       ),
       body: Center(
+        child: Column(
+          children: [
+            TextField(
+              keyboardType: TextInputType.text,
+              //controller: controller,
+              decoration: InputDecoration(
+                  labelText: "Adresse mail / Nom d'utilisateur:",
+                  hintText: "Entrez votre adresse mail ou Nom d'utilisateur."
+              ),
+            ),
+            TextField(
+              keyboardType: TextInputType.text,
+              //controller: controller,
+              obscureText: true,
+              decoration: InputDecoration(
+                  labelText: "Mot de passe:",
+                  hintText: "Entrez votre mot de passe."
+              ),
+            ),
+            RaisedButton(
+              child: Text("Connect"),
+              color: Colors.blue,
+              textColor: Colors.white,
+              onPressed: (){
+                //ToDo
+              },
+            ),
+          ],
+        ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
