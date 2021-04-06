@@ -19,6 +19,38 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
+        child: Card(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              const ListTile(
+                leading: Icon(Icons.account_box),
+                title: Text('Lorem Ipsum'),
+                subtitle: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt odio eu metus porttitor, pharetra commodo nibh tincidunt. Aenean et blandit nisl, sollicitudin posuere nibh. Donec id malesuada justo. Vestibulum ultricies vehicula risus, ut scelerisque magna fringilla at. Nullam fringilla ex at tempor blandit. Nulla facilisi. Aliquam id dignissim urna. Vivamus at dui vitae libero vestibulum blandit.'),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  TextButton(
+                    child: const Text('Like'),
+                    onPressed: () {/* ... */},
+                  ),
+                  const SizedBox(width: 8),
+                  TextButton(
+                    child: const Text('Répondre'),
+                    onPressed: () {/* ... */},
+                  ),
+                  const SizedBox(width: 8),
+                  TextButton(
+                    child: const Text('Partager'),
+                    onPressed: () {/* ... */},
+                  ),
+                  const SizedBox(width: 8),
+                ],
+              ),
+            ],
+          ),
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
